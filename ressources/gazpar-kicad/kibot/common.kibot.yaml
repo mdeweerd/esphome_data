@@ -688,3 +688,29 @@ outputs:
       #   - field:
       #     name:
       # variant:
+  - name: kicost_price
+    type: kicost
+    dir: +PCBA
+    options:
+      # aggregate: []
+      #  # file, variant
+      currency: [EUR]
+      # distributors: [ digikey, sos, newark, mouser, tme, farnell ]
+      # no_distributors
+      # dnf_filter:
+      no_collapse: true
+      no_price: false
+      fields:
+        - comment
+        - S1MN
+        - S1PN
+        - S2MN
+        - S2PN
+      split_extra_fields: [h, comment, desc, lcsc#, S1MN, S1PN, S2MN, S2PN]
+      board_qty: 1
+      # split_fields: [ h, comment, desc, S1MN, S1PN, S2MN, S2PN ]
+      show_cat_url: true
+      # translate_fields:
+      #   - field:
+      #     name:
+      # variant:
