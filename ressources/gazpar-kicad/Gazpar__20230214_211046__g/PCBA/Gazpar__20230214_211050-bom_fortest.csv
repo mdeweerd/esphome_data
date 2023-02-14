@@ -1,0 +1,8 @@
+"Value","Designator","Description","Footprint","Manufacturer","Component code","Manufacturer2","Component code2","Manufacturer3","Component code4","Comment"
+"1N4148","D1","100V 0.15A standard switching diode, DO-35","D_DO-35_SOD27_P7.62mm_Horizontal","ONSEMI","1N4148TR","","","","",""
+"LED","D2","Light emitting diode","LED_D3.0mm","BROADCOM","HLMP-Y301-F0000","","","","",""
+"G-","Gazpar1","Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)","TerminalBlock_bornier-2_P5.08mm","CAMDENBOSS","CTBP0108/2","AMPHENOL","VI0221550000G","","",""
+"330Ω","R1","Resistor","R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","YAGEO","CFR-25JR-52-330R","","","","",""
+"1kΩ","R2","Resistor","R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","YAGEO","CFR-25JB-52-1K","","","","",""
+"ESP32-DEVKITC-32D","U2","","MODULE_ESP32-DEVKITC-32D","CONNFLY;CONNFLY","DS1002-01-1*19V13;DS1002-01-1*19V13","","","","",""
+"PC817","U1","DC Optocoupler, Vce 35V, CTR 50-300%, DIP-4","DIP-4_W7.62mm","BROADCOM","HCPL-817-000E","","","","",""

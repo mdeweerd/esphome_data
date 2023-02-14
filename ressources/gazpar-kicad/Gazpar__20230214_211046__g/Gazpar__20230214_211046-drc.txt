@@ -1,0 +1,26 @@
+** Drc report for /root/workdir/Gazpar.kicad_pcb **
+** Created on 2023-02-14 21:12:23 **
+
+** Found 4 DRC violations **
+[courtyards_overlap]: Courtyards overlap
+    Local override; Severity: error
+    @(165.8425 mm, 73.1000 mm): Footprint D1
+    @(170.0000 mm, 70.0000 mm): Footprint U2
+[courtyards_overlap]: Courtyards overlap
+    Local override; Severity: error
+    @(170.0000 mm, 70.0000 mm): Footprint U2
+    @(165.8425 mm, 65.4800 mm): Footprint R1
+[courtyards_overlap]: Courtyards overlap
+    Local override; Severity: error
+    @(170.0000 mm, 70.0000 mm): Footprint U2
+    @(168.3775 mm, 57.8600 mm): Footprint U1
+[courtyards_overlap]: Courtyards overlap
+    Local override; Severity: error
+    @(170.0000 mm, 70.0000 mm): Footprint U2
+    @(173.4625 mm, 89.6100 mm): Footprint R2
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

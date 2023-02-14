@@ -1,0 +1,7 @@
+.cache/
+*.log
+*-backups/
+*.kicad_prl
+*.xml
+fp-info-cache
+runInKiAuto

@@ -1,0 +1,4 @@
+# Ignore overlaps
+courtyards_overlap,(?s)Footprint (U2)\s+.*Footprint (.*) 
+# Ignore overlaps
+courtyards_overlap,(?s)Footprint (.*)\s+.*Footprint (U2) 

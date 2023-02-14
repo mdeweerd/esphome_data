@@ -1,0 +1,8 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+"D1","1N4148","D_DO-35_SOD27_P7.62mm_Horizontal",165.8425,-73.1000,0.0000,top
+"D2","LED","LED_D3.0mm",190.5700,-89.6100,-90.0000,top
+"Gazpar1","G-","TerminalBlock_bornier-2_P5.08mm",189.9350,-51.1800,-90.0000,top
+"R1","330Ω","R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",165.8425,-65.4800,0.0000,top
+"R2","1kΩ","R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",173.4625,-89.6100,90.0000,top
+"U1","PC817","DIP-4_W7.62mm",168.3775,-57.8600,90.0000,top
+"U2","ESP32-DEVKITC-32D","MODULE_ESP32-DEVKITC-32D",170.0000,-70.0000,0.0000,top

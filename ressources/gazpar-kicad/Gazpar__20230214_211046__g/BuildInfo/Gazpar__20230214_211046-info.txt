@@ -1,0 +1,100 @@
+KiBot installation checker
+
+Core:
+Linux: 5.15.79.1 (Linux 0bc38839eed5 5.15.79.1-microsoft-standard-WSL2 #1 SMP Wed Nov 23 01:01:46 UTC 2022 x86_64 GNU/Linux)
+  /bin/uname
+Python: 3.9.2 (default, Feb 28 2021, 17:03:44)  [GCC 10.2.1 20210110]
+  /usr/lib/python3.9/os.py
+  /usr/bin/python3
+KiCad: 6.0.10+dfsg-1~bpo11+1
+  /usr/lib/python3/dist-packages/pcbnew.py
+  /usr/bin/kicad
+Kibot: 1.5.2
+  /usr/local/lib/python3.9/dist-packages/kibot/__main__.py
+  /usr/local/bin/kibot
+
+Modules:
+Colorama: 0.4.4
+  /usr/lib/python3/dist-packages/colorama/__init__.py
+LXML: 4.6.3
+  /usr/lib/python3/dist-packages/lxml/__init__.py
+PyYAML: 5.3.1
+  /usr/lib/python3/dist-packages/yaml/__init__.py
+QRCodeGen: Ok
+  /usr/lib/python3/dist-packages/qrcodegen.py
+Requests: 2.25.1
+  /usr/lib/python3/dist-packages/requests/__init__.py
+XLSXWriter: 1.1.2
+  /usr/lib/python3/dist-packages/xlsxwriter/__init__.py
+Xvfbwrapper: Ok
+  /usr/lib/python3/dist-packages/xvfbwrapper.py
+markdown2: 2.3.10
+  /usr/lib/python3/dist-packages/markdown2.py
+mistune: 0.8.4
+  /usr/lib/python3/dist-packages/mistune.py
+numpy: 1.19.5
+  /usr/lib/python3/dist-packages/numpy/__init__.py
+
+Tools:
+Bash: 5.1.4 (GNU bash, version 5.1.4(1)-release (x86_64-pc-linux-gnu))
+  /bin/bash
+Blender: 3.4.1 (Blender 3.4.1)
+  /usr/bin/blender
+Ghostscript: 9.53.3
+  /usr/bin/gs
+Git: 2.34.1 (git version 2.34.1)
+  /usr/bin/git
+ImageMagick: 6.9.11.60 (Version: ImageMagick 6.9.11-60 Q16 x86_64 2021-01-25 https://imagemagick.org)
+  /usr/bin/convert
+Interactive HTML BoM: 2.5.0.2 (v2.5.0-2)
+  /usr/bin/python3
+KiBoM: 1.8.0 (KiBOM Version: 1.8.0)
+  /usr/bin/KiBOM_CLI.py
+KiCad Automation tools (kiauto): 2.1.1 (pcbnew_do 2.1.1 - Copyright 2018-2023, INTI/Productize SPRL - License: Apache)
+  /usr/bin/pcbnew_do
+KiCad PCB/SCH Diff (kidiff): 2.4.3 (kicad-diff.py 2.4.3 - Copyright 2020-2022, INTI/Salvador E. Tropea - License:)
+  /usr/bin/kicad-diff.py
+KiCost: 1.1.15 (KiCost v1.1.15)
+  /usr/local/bin/kicost
+KiKit: 1.2.0.1 (kikit, version 1.2.0-1)
+  /usr/bin/kikit
+OpenSCAD: 2021.1.0 (OpenSCAD version 2021.01)
+  /usr/bin/openscad
+Pandoc: 2.9.2.1 (pandoc 2.9.2.1)
+  /usr/bin/pandoc
+RAR: 5.50.0 (RAR 5.50   Copyright (c) 1993-2017 Alexander Roshal   11 Aug 2017)
+  /usr/bin/rar
+RSVG tools: 2.50.3 (rsvg-convert version 2.50.3)
+  /usr/bin/rsvg-convert
+Xvfb: Ok (xvfb-run)
+  /usr/bin/rsvg-convert
+
+Environment:
+DISPLAY
+HOME
+HOSTNAME
+INTERACTIVE_HTML_BOM_NO_DISPLAY
+KICAD6_FOOTPRINT_DIR
+KICAD6_SYMBOL_DIR
+LC_CTYPE
+NO_AT_BRIDGE
+OLDPWD
+PATH
+PWD
+SHLVL
+TERM
+TZ
+_
+
+KiAuto:
+This is KiAuto v2.1.1
+Installed at: /usr/bin/pcbnew_do
+Using kiauto module from: /usr/lib/python3/dist-packages/kiauto
+Interpreted by Python: /usr/bin/python3 (v3.9.2 (default, Feb 28 2021, 17:03:44)  [GCC 10.2.1 20210110])
+Tools:
+- kicad: /usr/bin/kicad (v6.0.10+dfsg-1~bpo11+1)
+- xdotool: /usr/bin/xdotool
+- recordmydesktop: /usr/bin/recordmydesktop
+- xsltproc: /usr/bin/xsltproc
+- xclip: /usr/bin/xclip
+- convert: /usr/bin/convert

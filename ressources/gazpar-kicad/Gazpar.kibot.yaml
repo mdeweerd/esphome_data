@@ -1,0 +1,123 @@
+---
+kibot:
+  version: 1
+
+
+import:
+  - file: kibot/common.kibot.yaml
+  - file: kibot/JLCPCB_stencil.kibot.yaml
+  - file: kibot/JLCPCB_position.kibot.yaml
+  - file: kibot/PCBWay.kibot.yaml
+  - file: kibot/pcbfull.kibot.yaml
+#    outputs:
+#    filters:
+#    variants:
+global:
+  output: '%f_%r_%d-%i.%x'
+  # out_dir: "%f_%br_%bd_%g/"
+  out_dir: '%bf_%r_%d_%g/'
+  date_time_format: '%Y%m%d_%H%M%S'
+  date_format: '%Y%m%d'
+  time_format: '%H%M%S'
+  environment:
+    # symbols: '/usr/share/kicad6/symbols'
+    symbols: '/usr/share/kicad/symbols'
+    footprints: '/usr/share/kicad6/footprints'
+
+filters:
+  - name: kicost_rename
+    comment: Variant rename KiCost style
+    type: var_rename_kicost
+    # Empty will default to :
+    separator: ''
+    variant_to_value: true
+
+
+preflight:
+  check_zone_fills: true
+  run_drc: true
+  run_erc: false
+  erc_warnings: true
+    # filters:
+    # - filter: "Description"
+    #   error: ""
+    #   number:
+    #   regex: "None"
+  filters:
+    - filter: Ignore overlaps
+      error: courtyards_overlap
+      regex: '(?s)Footprint (U2)\s+.*Footprint (.*) '
+    - filter: Ignore overlaps
+      error: courtyards_overlap
+      regex: '(?s)Footprint (.*)\s+.*Footprint (U2) '
+  ignore_unconnected: false
+  update_xml: true
+
+outputs:
+  - name: render_2d_top_pcb
+    type: render_3d
+    extends: render_2d_top
+    dir: +PCBA
+    disable_run_by_default: render_2d_top
+    options:
+      zoom: 2
+      width: 3840
+      # solder_mask: '#1A1A1A'
+      # copper: '#2A2A2A'
+      move_y: 0
+      height: 5120
+  - name: render_2d_bottom_pcb
+    type: render_3d
+    extends: render_2d_bottom
+    dir: +PCBA
+    disable_run_by_default: render_2d_bottom
+    options:
+      zoom: 2
+      width: 3840
+      # solder_mask: '#1A1A1A'
+      # copper: '#2A2A2A'
+      move_y: 0
+      height: 5120
+  - name: render_3d_top_pcb
+    type: render_3d
+    extends: render_3d_top
+    dir: +PCB3D
+    disable_run_by_default: render_3d_top
+    options:
+      zoom: 2
+      width: 3840
+      # solder_mask: '#1A1A1A'
+      move_y: 0
+      height: 5120
+  - name: render_3d_bottom_pcb
+    type: render_3d
+    extends: render_3d_bottom
+    dir: +PCB3D
+    disable_run_by_default: render_3d_bottom
+    options:
+      zoom: 2
+      width: 3840
+      # solder_mask: '#1A1A1A'
+      # copper: '#2A2A2A'
+      move_y: 0
+      height: 5120
+  - name: diff_pcb_refill
+    comment: Show differences for the zone fill
+    type: diff
+    layers: copper
+    options:
+      cache_dir: .cache
+      old: ''
+      old_type: file
+      new_type: current
+  - name: diff_pcb_checkrefill
+    comment: Check the zone fill doesn't generate important changes
+    type: diff
+    layers: copper
+    options:
+      cache_dir: .cache
+      diff_mode: stats
+      threshold: 100
+      old: ''
+      old_type: file
+      new_type: current
